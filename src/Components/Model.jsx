@@ -1,4 +1,9 @@
 import React from "react";
+import Radiobtn from "./Radiobtn";
+import Addtaskcolone from './Addtaskcolone';
+import Modelassignto from './Modelassignto';
+
+
 
 export default function Modal() {
   const [showModal, setShowModal] = React.useState(false);
@@ -14,127 +19,28 @@ export default function Modal() {
       {showModal ? (
         <>
           <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
-            <div className="relative w-auto my-6 mx-auto max-w-3xl">
+            <div className="relative w-auto my-6 mx-auto">
               <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
-                <div className="flex items-start justify-between p-5 border-b border-solid border-slate-200 rounded-t">
-                  <h3 className="text-3xl font-semibold">Add Task</h3>
+                <div className="flex items-start justify-between p-3 border-b border-solid border-slate-200 rounded-t">
+                  <h3 className="text-xl font-semibold">Add Task</h3>
                 </div>
-                <div class="grid grid-flow-col">
-                  <div class="col-span-4 border">
-                    <div class="flex justify-center">
-                      <div class="mb-1 ml-3 mr-2">
-                        <label
-                          htmlFor="Input1"
-                          class="form-label inline-block mb-2 text-gray-700"
-                        >
-                          Task Name
-                        </label>
-                        <input
-                          type="text"
-                          class="
-                                form-control
-                                block
-                                w-full
-                                px-3
-                                py-1.5
-                                text-base
-                                font-normal
-                                text-gray-700
-                                bg-white bg-clip-padding
-                                border border-solid border-gray-300
-                                rounded
-                                transition
-                                ease-in-out
-                                m-0
-                                focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
-                            "
-                          placeholder="Get Appointment Letter from HR"
-                          id="Input1"
-                        />
-                      </div>
-                    </div>
-
-
-                    <div class="flex justify-center">
-                      <div class="mb-1 ml-3 mr-2">
-                        <label
-                          htmlFor="Textarea1"
-                          class="form-label inline-block mb-2 text-gray-700"
-                        >
-                          Description
-                        </label>
-                        <textarea
-                          class="
-                                form-control
-                                block
-                                w-full
-                                px-3
-                                py-1.5
-                                text-base
-                                font-normal
-                                text-gray-700
-                                bg-white bg-clip-padding
-                                border border-solid border-gray-300
-                                rounded
-                                transition
-                                ease-in-out
-                                m-0
-                                focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
-                            "
-                          id="Textarea1"
-                          rows="3"
-                          placeholder="Write Description"
-                        ></textarea>
-                      </div>
-                    </div>
-                    <div class="flex justify-center">
-                      <div class="mb-1 ml-3 mr-2">
-                        <label
-                          htmlFor="Input1"
-                          class="form-label inline-block mb-2 text-gray-700"
-                        >
-                          Related To
-                        </label>
-                        <input
-                          type="text"
-                          class="
-                                form-control
-                                block
-                                w-full
-                                px-3
-                                py-1.5
-                                text-base
-                                font-normal
-                                text-gray-700
-                                bg-white bg-clip-padding
-                                border border-solid border-gray-300
-                                rounded
-                                transition
-                                ease-in-out
-                                m-0
-                                focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
-                            "
-                          placeholder="HR Department"
-                          id="Input1"
-                        />
-                      </div>
-                    </div>
-
+                <div className="grid grid-flow-col">
+                  <Addtaskcolone/>
+                  <div className="col-span-4 border">
+                    <Modelassignto className="m-6"/>
                   </div>
-
-                  <div class="col-span-4 border">vwvwr</div>
-                  <div class="col-span-4">
-                  <div class="flex justify-center">
-                      <div class="mb-1 ml-3 mr-2">
+                  <div className="col-span-4">
+                    <div className="flex justify-center">
+                      <div className="mb-1 ml-3 mr-2">
                         <label
                           htmlFor="Input1"
-                          class="form-label inline-block mb-2 text-gray-700"
+                          className="form-label inline-block mb-2 text-gray-500"
                         >
                           Set Deadline
                         </label>
                         <input
                           type="date"
-                          class="
+                          className="
                                 form-control
                                 block
                                 w-full
@@ -144,7 +50,7 @@ export default function Modal() {
                                 font-normal
                                 text-gray-700
                                 bg-white bg-clip-padding
-                                border border-solid border-gray-300
+                                border border-solid border-gray-500
                                 rounded
                                 transition
                                 ease-in-out
@@ -156,6 +62,7 @@ export default function Modal() {
                         />
                       </div>
                     </div>
+                    <Radiobtn/>
                   </div>
                 </div>
                 <div className="flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b">
