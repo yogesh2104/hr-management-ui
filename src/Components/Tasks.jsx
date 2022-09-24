@@ -4,11 +4,6 @@ const Tasks = () => {
   return (
     <>
       <div className="rounded-lg shadow-md bg-white w-full">
-        {/* <div className="py-3 px-6 border-b border-gray-300">Tasks
-              <span className="mt-0 flex justify-end">
-                <span className="bg-gray-500 w-7 flex justify-center rounded-full">&#60;</span><FaCalendarAlt className="mt-1 m-2"/> May 9,2022<span className="bg-gray-500 w-7 flex justify-center rounded-full">&#62;</span>
-              </span>
-              </div> */}
         <div class="grid grid-flow-col border-b border-gray-200">
           <div class="col-span-4 py-3 px-6">Tasks</div>
           <div class="col-span-4 flex justify-end mr-4 mt-2">

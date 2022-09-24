@@ -2,13 +2,14 @@ import React from "react";
 import Tasks from "../Components/Tasks";
 import Model from "./Model";
 import Nav from "./Nav";
+import Tasklist from "./Tasklist";
 const Home = () => {
   // const openModel=()=>{
   //   <Model/>
   // }
   return (
     <>
-    <Nav/>
+      <Nav />
       <div className="grid grid-flow-col">
         <div className="col-span-2">
           <div className="w-60 h-96 shadow-md bg-white px-1 absolute">
@@ -98,13 +99,19 @@ const Home = () => {
         </div>
         <div className="col-span-4">
           <div className="ml-20 mt-6">
-            <Tasks/>
+            <Tasks />
           </div>
         </div>
         <div className="col-span-3">
           <div className="flex justify-center mt-5">
-            <Model/>
+            <Model />
           </div>
+        </div>
+      </div>
+      <div className="grid grid-flow-col">
+        <div className="col-span-1">svssoAIHAFIIO</div>
+        <div className="col-span-6 ml-16 mr-6">
+      <Tasklist/>
         </div>
       </div>
     </>
