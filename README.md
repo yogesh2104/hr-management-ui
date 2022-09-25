@@ -1,7 +1,7 @@
-#Project ScreenShot
-![Documentation Screenshot](https://github.com/yogesh2104/hr-management-ui/blob/main/public/Screenshot%20(1).png)
+# Project ScreenShot
+![Documentation Screenshot](https://github.com/yogesh2104/hr-management-ui/blob/main/public/1.png)
 
-![Documentation Screenshot](https://github.com/yogesh2104/hr-management-ui/blob/main/public/Screenshot%20(2).png)
+![Documentation Screenshot](https://github.com/yogesh2104/hr-management-ui/blob/main/public/2.png)
 
 
 # Getting Started with Create React App
